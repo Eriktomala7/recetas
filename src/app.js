@@ -24,10 +24,7 @@ const app = express();
 app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Servir archivos estáticos desde la carpeta 'uploads'
 
 // Configuración CORS
-app.use(cors({
-  origin: 'https://recetas-8945.onrender.com',  // Asegúrate de que esta sea la URL de tu frontend
-  credentials: true,               // Si necesitas enviar cookies o cabeceras personalizadas
-}));
+app.use(cors());
 
 app.use(express.json());  // Parsear JSON en las solicitudes
 
