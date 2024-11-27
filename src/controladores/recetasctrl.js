@@ -15,7 +15,7 @@ export const getRecetas = async (req, res) => {
 
         result.forEach(receta => {
             if (receta.imagen) {
-                receta.imagen = `${req.protocol}://${req.get("host")}/uploads/${receta.imagen}`;
+                receta.imagen = `${req.protocol}://${req.get("host")}/${receta.imagen}`;
             }
         });
 
