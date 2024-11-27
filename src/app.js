@@ -25,7 +25,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Servir 
 
 // Configuración CORS
 app.use(cors({
-  origin: 'http://localhost:8100',  // Asegúrate de que esta sea la URL de tu frontend
+  origin: 'https://recetas-8945.onrender.com',  // Asegúrate de que esta sea la URL de tu frontend
   credentials: true,               // Si necesitas enviar cookies o cabeceras personalizadas
 }));
 
